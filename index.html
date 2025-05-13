@@ -1,62 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakesh Myana|Portfolio</title>
+    <title>Rakesh Myana | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/genaral.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
-    <section name="header">
+    <section id="header">
         <div class="header-container">
-            <div id="header-photo">
-                <img src="images/img-placeholder.jpg" alt="">
-            </div>
             <div id="header-name">
-                <p>Rakesh Myana</p>
-                <p>Web Developer</p>
+                <p>Portfolio</p>
             </div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <nav class="nav-list">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </section>
 
-    <section name="about">
+    <section id="about">
         <div class="about-container">
-            <h2>About Me</h2>
-            <p>Hi! I'm Rakesh Myana, a passionate web developer with a knack for creating dynamic and responsive websites. I love coding and am always eager to learn new technologies.</p>
+            <div class="about-photo">
+                <img src="images/rakesh-profile.png" alt="my image">
+            </div>
+            <div class="about-text">
+                <h2>Hi,I'm Rakesh <span>Myana</span></h2>
+                <p>I believe everything around us is a form of automation—apps, websites, and tools exist to minimize
+                    manual effort through code. My passion lies in crafting solutions that simplify tasks and deliver
+                    real value to people’s lives.
+
+                    <br>Whether it’s building intelligent models, automating repetitive workflows, or developing
+                    intuitive web applications, I thrive on turning ideas into functional software.
+
+                    I’m driven by problem-solving across domains, blending efficiency and creativity to address
+                    real-world challenges.
+                </p>
+
+            </div>
         </div>
 
     </section>
 
-    <section name="education">
+    <section id="education">
+
         <div class="education-container">
-            <h2>Education</h2>
-            <p>Bachelor of Science in Computer Science</p>
-            <p>XYZ University, 2020</p>
+            <h2>My <span>Education</span></h2>
+            <div class="education-content">
+                <div class="education-top">
+                    <div>
+                        <p class="education-institute">JNTUH University College of Engineering Jagtial</p>
+                        <p class="education-type">B.Tech, Information Technology | CGPA-7.57 </p>
+                    </div>
+                    <div>
+                        <p class="education-year">2021-2025 </p>
+                        <p class="education-place">Jagtial, Telangana </p>
+                    </div>
+                </div>
+
+                <div class="education-middle">
+                    <div class="education-left-div">
+                        <p class="education-institute">Pratibha Junior College </p>
+                        <p class="education-type">Intermediate | Percentage-98.4 </p>
+                    </div>
+                    <div>
+                        <p class="education-year">2019-2021 </p>
+                        <p class="education-place">Siddipet, Telangana </p>
+                    </div>
+                </div>
+
+                <div class="education-bottom">
+                    <div>
+                        <p class="education-institute">SR High School </p>
+                        <p class="education-type">SSC | CGPA-9.8 </p>
+                    </div>
+                    <div>
+                        <p class="education-year">2019 </p>
+                        <p class="education-place">Siddipet, Telangana </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
-    <section name="projects">
+    <section id="projects">
+        <div class="projects-header">
+            <h2>My <span>Projects</span></h2>
+        </div>
+
         <div class="projects-container">
-            <p>project 1</p>
-            <p>project 2</p>
-            <p>project 3</p>
+
+
+            <div class="project-card" style="grid-area: box1">
+                <h3>Mental Health Predictor</h3>
+                <p>A Flask web app using machine learning to predict depression risk based on user inputs like role,
+                    age, and lifestyle. It provides real-time predictions with 93% accuracy.</p>
+
+                <a class="project-link live-project" href="https://mental-health-predictor-45x9.onrender.com/"
+                    target="_blank">
+                    <img src="images/external-link.svg" alt="">
+                </a>
+
+            </div>
+
+            <div class="project-card" style="grid-area: box2">
+                <h3>Personal Portfolio</h3>
+                <p>This is my personal portfolio created using HTML and CSS. It features a clean, responsive design that
+                    showcases my skills and projects, with an intuitive layout for easy navigation</p>
+
+                <a class="project-link live-project" href="#about">
+                    <img src="images/external-link.svg" alt="">
+                </a>
+
+            </div>
+
+            <div class="project-card" style="grid-area: box3">
+                <h3>Magic Square Generator </h3>
+                <p>A logic-driven tool that creates valid 4x4 magic squares with customizable target sums, ensuring all
+                    rows, columns, and diagonals add up equally</p>
+                <a class="project-link live-project" href="https://magicsquare-ntkt.onrender.com/" target="_blank">
+                    <img src="images/external-link.svg" alt="">
+                </a>
+            </div>
+
+            <div class="project-card" style="grid-area: box4">
+                <h3>Pawn eBay Lister</h3>
+                <p>An AI-powered tool using AWS Bedrock and Lambda to generate and publish SEO-optimized eBay listings
+                    via API.</p>
+                <a class="project-link github-project"
+                    href="https://github.com/rakesh-myana/ebay-item-listings-anthropic-claud" target="_blank">
+                    <img src="images/external-link.svg" alt="">
+                </a>
+
+            </div>
+
+            <div class="project-card" style="grid-area: box5">
+                <h3>Mark Sheet Generator</h3>
+                <p>A Python automation tool using Selenium to scrape student results and export them to Excel. It
+                    reduced manual effort by 90% in generating structured academic mark sheets.</p>
+                <a class="project-link github-project" href="https://github.com/rakesh-myana/Mark-Sheet-Generator"
+                    target="_blank">
+                    <img src="images/external-link.svg" alt="">
+                </a>
+            </div>
+
         </div>
     </section>
 
-    <section name="contact">
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <p>Email:</p>
 
-    </section>    
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact <span>Me</span></h2>
+            <p>Email: myanarakesh55@gmail.com</p>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="https://formsubmit.co/24e131b71ade592e64f23b3402b8b429" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" name="message" required placeholder="Enter your message"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
 </body>
+<footer>
+    <div class="footer-container">
+        <!-- Social Icons First -->
+        <div class="social-icons">
+            <a href="https://github.com/rakesh-myana" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/rakesh-myana" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn"></a>
+        </div>
+
+
+        <!-- Copyright Text -->
+        <p>&copy; 2025 Rakesh Myana. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
 </html>

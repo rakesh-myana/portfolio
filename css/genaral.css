@@ -1,15 +1,12 @@
-.about-container{
-    border: 3px solid green;
+span{
+    color: #007bff
 }
-
-.education-container{
-    border: 3px solid red;
+body{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-family: 'ubuntu', sans-serif;
 }
-
-.projects-container{
-    border: 3px solid blue;
-}
-
-.contact-container{
-    border: 3px solid rgb(1, 214, 37);
+p{
+    margin: 0px 0px;
+    padding: 0px 0px;
 }

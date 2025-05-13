@@ -1,6 +1,65 @@
+/* General Header Styling */
+#header {
+    background-color: #6b1bc5;
+    font-family: 'roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 8px; 
+    z-index: 100;
+
+}
+
+/* Header Container Styling */
 .header-container {
-    border: 4px solid #0066ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    padding:20px 60px;
+}
+
+/* Header Name Styling */
+#header-name p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation List Styling */
+.nav-list {
+    display: flex;
+    gap: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navigation Link Styling */
+.nav-list a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition:color 0.20s ease, font-weight 0.20s ease;
+}
+
+/* Navigation Link Hover Effect */
+.nav-list a:hover {
+    color: #FFFF99; /* Gold color for hover */
+    transform: scale(1.1) translateY(-2px) ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-name p {
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
 }

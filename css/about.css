@@ -1,0 +1,77 @@
+/* General Section Styling */
+#about {
+    padding: 130px 0px;
+    background-color: #f9f9f9;
+    margin-top: 80px; 
+    scroll-margin-top: 80px; 
+      font-family: 'ubuntu', sans-serif;
+
+}
+
+/* About Container Styling */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    max-width: 100%;
+    margin: 0px 0px;
+}
+
+/* About Photo Styling */
+.about-photo {
+    flex: 1;
+    max-width: 400px;
+    
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+   
+}
+
+/* About Text Styling */
+.about-text {
+    flex: 2 ;
+    max-width:600px;
+    
+}
+
+.about-text h2 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+  
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+      
+    }
+
+    .about-photo img {
+        width: 200px;
+        height: 200px;
+    }
+    #about {
+        padding: 50px 0px;
+    }
+
+  
+}
