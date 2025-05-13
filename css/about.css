@@ -1,6 +1,6 @@
 /* General Section Styling */
 #about {
-    padding: 130px 0px;
+    padding: 80px 0px;
     background-color: #f9f9f9;
     margin-top: 80px; 
     scroll-margin-top: 80px; 
@@ -75,3 +75,26 @@
 
   
 }
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.resume-btn p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+.resume-btn:hover {
+  background-color: #005bb5;
+}
+
